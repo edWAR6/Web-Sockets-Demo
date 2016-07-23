@@ -1,0 +1,19 @@
+{
+  "name": "web-sockets-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edWAR6/Web-Sockets-Demo.git"
+  },
+  "author": "Eduardo Oviedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edWAR6/Web-Sockets-Demo/issues"
+  },
+  "homepage": "https://github.com/edWAR6/Web-Sockets-Demo#readme"
+}

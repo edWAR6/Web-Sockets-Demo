@@ -1,6 +1,6 @@
 // NodeJS server
 var http = require('http');
-var server = http.createServer(function(){	
+var server = http.createServer(function(){
 });
 
 server.listen(1234, function(){
@@ -19,6 +19,7 @@ var clients = {};
 wsServer.on('request', function(req){
 	// Accepting connection
 	var connection = req.accept('echo-protocol', req.origin);
+	
 	var id = count ++;
 	clients[id] = connection;
 	console.log('New connection accepted: '+ id);
@@ -34,8 +35,8 @@ wsServer.on('request', function(req){
 
 	// Client exit
 	connection.on('close', function(reasonCode, description){
-		delete client[id];
-		console.log('Client disconnected. Id: '+ id +', Address: '+ connection.remoteAddress);
+		delete clients[id];
+		console.log('Client disconnected. Id: '+ id +', Address: '+ connection.remoteAddress +'\n'+ description);
 	});
 });
 

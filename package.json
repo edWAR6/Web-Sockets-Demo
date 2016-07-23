@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edWAR6/Web-Sockets-Demo/issues"
   },
-  "homepage": "https://github.com/edWAR6/Web-Sockets-Demo#readme"
+  "homepage": "https://github.com/edWAR6/Web-Sockets-Demo#readme",
+  "dependencies": {
+    "websocket": "^1.0.23"
+  }
 }
